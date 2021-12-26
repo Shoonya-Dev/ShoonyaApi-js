@@ -1,6 +1,6 @@
 # ShoonyaAPI
 
-Api used to connect to ShoonyaUAT
+Api used to connect to Shoonya Server
 ****
 
 ## Build
