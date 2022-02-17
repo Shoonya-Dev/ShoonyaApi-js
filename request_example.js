@@ -12,6 +12,9 @@ api.login(authparams)
         if(res.stat !== 'Ok')
             return;
        
+        //get quote example
+        api.get_time_price_series('NSE', '22', '1645039801', '1645119424', '1').then((reply) => { console.log(reply); });
+
         //search scrip example
         api.searchscrip('NFO', 'NIFTY DEC CE').then((reply) => { console.log(reply); });
         

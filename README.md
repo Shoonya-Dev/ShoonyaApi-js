@@ -488,15 +488,17 @@ the response is as follows,
 | bo5| ```string``` | True |Best Buy Orders 5 |
 | so5| ```string``` | True |Best Sell Orders 5|
 
-#### <a name="md-get_time_price_series"></a> get_time_price_series(exchange, token, starttime, endtime):
-gets the chart date for the symbol
+#### <a name="md-get_time_price_series"></a> get_time_price_series(exchange, token, starttime, endtime, interval):
+gets the chart data for the symbol
 
-| Param | Type | Optional |Description |
-| --- | --- | --- | ---|
-| exchange | ```string``` | True | Exchange NSE  / NFO / BSE / CDS |
-| token | ```string``` | True | token number of the contract|
-| starttime | ```string``` | True | Start time (seconds since 1 jan 1970) |
-| endtime | ```string``` | True | End Time (seconds since 1 jan 1970)|
+|Json Fields|Possible value|Description|
+| --- | --- | ---|
+|uid*||Logged in User Id|
+|exchange*||Exchange|
+|token*|||
+|starttime||Start time (seconds since 1 jan 1970)|
+|endtime||End Time (seconds since 1 jan 1970)|
+|interval|“1”, ”3”, “5”, “10”, “15”, “30”, “60”, “120”, “240”|Candle size in minutes (optional field, if not given assume to be “1”)|
 
 the response is as follows,
 
