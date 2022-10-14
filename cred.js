@@ -1,8 +1,8 @@
 module.exports.authparams = {
 'userid'   : 'USER',
 'password' : 'Abc123',
-'twoFA'    : '01011970',
+'twoFA'    : 'OTP/TOTP',
 'vendor_code' : 'VC',
-'api_secret' : 'your secret',
+'api_secret' : 'API Key',
 'imei'       : 'machine id'
 }
