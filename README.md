@@ -55,10 +55,10 @@ connect to the broker, only once this function has returned successfully can any
 | Param | Type | Optional |Description |
 | --- | --- | --- | ---|
 | userid | ```string``` | False | user credentials |
-| password | ```string```| False | password encrypted |
-| twoFA | ```string``` | False | dob/pan |
+| password | ```string```| False | SHA256 password encrypted |
+| twoFA | ```string``` | False | OTP/ TOTP |
 | vendor_code | ```string``` | False | vendor code shared  |
-| api_secret | ```string``` | False | your secret   |
+| api_secret | ```string``` | False | API Key   |
 | imei | ```string``` | False | imei identification |
 
 #### <a name="md-logout"></a> logout()
@@ -75,7 +75,7 @@ place an order to oms
 | --- | --- | --- | ---|
 | buy_or_sell | ```string``` | False | B -> BUY, S -> SELL |
 | product_type | ```string```| False | C / M / H Product name (Select from ‘prarr’ Array provided in User Details response, and if same is allowed for selected, exchange. Show product display name, for user to select, and send corresponding prd in API call) |
-| exchange | ```string``` | False | Exchange NSE  / NFO / BSE / CDS |
+| exchange | ```string``` | False | Exchange NSE / NFO / CDS / MCX / BSE |
 | tradingsymbol | ```string``` | False | Unique id of contract on which order to be placed. (use url encoding to avoid special char error for symbols like M&M |
 | quantity | ```integer``` | False | order quantity   |
 | discloseqty | ```integer``` | False | order disc qty |
@@ -92,8 +92,8 @@ modify the quantity pricetype or price of an order
 | Param | Type | Optional |Description |
 | --- | --- | --- | ---|
 | orderno | ```string``` | False | orderno to be modified |
-| exchange | ```string``` | False | Exchange NSE  / NFO / BSE / CDS |
-| tradingsymbol | ```string``` | False | Unique id of contract on which order to be placed. (use url encoding to avoid special char error for symbols like M&M |
+| exchange | ```string``` | False | Exchange NSE / NFO / CDS / MCX / BSE |
+| tradingsymbol | ```string``` | False | RELIANCE-EQ / L&TFH29SEP22P97 / USDINR25NOV22C76 / CRUDEOIL16NOV22P5400 / WHIRLPOOL Unique id of contract on which order to be placed. (use url encoding to avoid special char error for symbols like M&M |
 | newquantity | ```integer``` | False | new order quantity   |
 | newprice_type | ```string```| False | PriceType enum class |
 | newprice | ```double```| False | Price |
