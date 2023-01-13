@@ -551,6 +551,7 @@ the response is as follows,
 | ls | ```string``` | False | Lot Size |
 
 #### <a name="md-start_websocket"></a> start_websocket()
+Note: Please ensure that only a single web-socket connection is started. Opening multiple web-socket connections is not supported by the API.
 starts the websocket
 
 | Param | Type | Optional |Description |
