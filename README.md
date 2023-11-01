@@ -941,7 +941,25 @@ while(feed_opened==False):
 ```
 
 ****
+## Symbol Master:- Check the Symbol Format from Below mention Symbol Master urls
 
+NSE - Capital Market
+https://api.shoonya.com/NSE_symbols.txt.zip
+
+NSE - Equity Derivatives
+https://api.shoonya.com/NFO_symbols.txt.zip
+
+NSE - Currency Derivatives
+https://api.shoonya.com/CDS_symbols.txt.zip
+
+MCX - Commodity
+https://api.shoonya.com/MCX_symbols.txt.zip
+
+BSE - Capital Market
+https://api.shoonya.com/BSE_symbols.txt.zip
+
+BSE - Equity Derivatives
+https://api.shoonya.com/BFO_symbols.txt.zip
 ## Author
 
 Kumar Anand
